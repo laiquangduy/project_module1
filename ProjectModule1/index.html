@@ -10,13 +10,18 @@
     <style>
       /* width */
       ::-webkit-scrollbar {
-        width: 10px;
+        width: 6px;
         margin-right: 1000px;
       }
 
       /* Track */
       ::-webkit-scrollbar-track {
-        background: white;
+        background: #F0F2F5;
+        
+        
+      }
+      ::-webkit-resizer {
+        width: 100px;
       }
 
       /* Handle */
@@ -24,6 +29,7 @@
         background: #bcc0c4;
         border-radius: 999px;
         opacity: 0.5;
+        
       }
 
       /* Handle on hover */
@@ -40,41 +46,48 @@
       <div class="first-bar">
         <div>
           <ul class="nav-bar">
-            <li class="item">Quang Duy</li>
-            <li class="item"><img src="./img/Friends.png" alt="" /> Friends</li>
-            <li class="item"><img src="./img/Groups.png" alt="" /> Groups</li>
+            <li class="item"><img class="av" src="./img/mZu.jpg" alt="" /><div><span class="wu">Mark Zuckerberg</span></div> </li>
+            <li class="item"><img class="icon" src="./img/Friends.png" alt="" /> <div><span class="wu">Friends</span></div> </li>
+            <li class="item"><img class="icon" src="./img/Groups.png" alt="" /><div><span class="wu">Groups</span></div> </li>
             <li class="item">
-              <img src="./img/Adcenter.png" alt="" /> Ad Center
+              <img class="icon" src="./img/Adcenter.png" alt="" /> <div><span class="wu">Ad Center</span></div> 
             </li>
             <li class="item">
-              <img src="./img/Marketplace.png" alt="" /> Marketplace
+              <img class="icon" src="./img/Marketplace.png" alt="" /><div><span class="wu"> Marketplace</span></div>
             </li>
-            <li class="item"><img src="./img/Watch.png" alt="" /> Watch</li>
+            <li class="item"><img class="icon" src="./img/Watch.png" alt="" /><div><span class="wu"> Watch</span></div></li>
             <li class="item">
-              <img src="./img/Memories.png" alt="" /> Memories
+              <img class="icon" src="./img/Memories.png" alt="" /> <div><span class="wu"> Memories</span></div>
             </li>
-            <li class="item"><img src="./img/Saved.png" alt="" /> Saved</li>
+            <li class="item"><img class="icon" src="./img/Saved.png" alt="" /> <div><span class="wu"> Saved</span></div></li>
             <span id="dots"></span>
             <span id="more">
-            <li class="item"><img src="./img/Adsmanager.png" alt="">Ads Manager</li>
-            <li class="item"><img src="./img/blood.png" alt="">Blood Donations</li>
-            <li class="item"><img src="./img/climatesc.png" alt="">Climate Science Center</li>
-            <li class="item"><img src="./img/crisisr.png" alt="">Crisis response</li>
-            <li class="item"><img src="./img/EH.png" alt="">Emotional Health</li>
-            <li class="item"><img src="./img/Events.png" alt="">Events</li>
-            <li class="item"><img src="./img/FP.png" alt="">Facebook Pay</li>
-            <li class="item"><img src="./img/Favorites.png" alt="">Favorites</li>
-            <li class="item"><img src="./img/Fundraisers.png" alt="">Fundraisers</li>
-            <li class="item"><img src="./img/Gamingv.png" alt="">Gaming videos</li>
-            <li class="item"><img src="./img/Messenger.png" alt="">Messenger</li>
-            <li class="item"><img src="./img/Messengerk.png" alt="">Messenger Kids</li>
-            <li class="item"><img src="./img/MostRecent.png" alt="">Most Recent</li>
-            <li class="item"><img src="./img/Pages.png" alt="">Pages</li>
-            <li class="item"><img src="./img/PlayGames.png" alt="">Play Games</li>
-            <li class="item"><img src="./img/Recentadactivity.png" alt="">Recent ad activity</li>
+            <li class="item"><img class="icon" src="./img/Adsmanager.png" alt=""><div><span class="wu"> Ads Manager</span></div></li>
+            <li class="item"><img class="icon" src="./img/blood.png" alt=""><div><span class="wu"> Blood Donations</span></div></li>
+            <li class="item"><img class="icon" src="./img/climatesc.png" alt=""><div><span class="wu"> Climate Science Center</span></div></li>
+            <li class="item"><img class="icon" src="./img/crisisr.png" alt=""><div><span class="wu"> Crisis response</span></div></li>
+            <li class="item"><img class="icon" src="./img/EH.png" alt=""><div><span class="wu"> Emotional Health</span></div></li>
+            <li class="item"><img class="icon" src="./img/Events.png" alt=""><div><span class="wu"> Events</span></div></li>
+            <li class="item"><img class="icon" src="./img/FP.png" alt=""><div><span class="wu"> Facebook Pay</span></div></li>
+            <li class="item"><img class="icon" src="./img/Favorites.png" alt=""><div><span class="wu"> Favorites</span></div></li>
+            <li class="item"><img class="icon" src="./img/Fundraisers.png" alt=""><div><span class="wu">Fundraisers</span></div></li>
+            <li class="item"><img class="icon" src="./img/Gamingv.png" alt=""><div><span class="wu"> Gaming Video</span></div></li>
+            <li class="item"><img class="icon" src="./img/Livev.png" alt=""><div><span class="wu"> Live videos</span></div></li>
+            <li class="item"><img class="icon" src="./img/Messenger.png" alt=""><div><span class="wu"> Messenger</span></div></li>
+            <li class="item"><img class="icon" src="./img/Messengerk.png" alt=""><div><span class="wu"> Messenger Kids</span></div></li>
+            <li class="item"><img class="icon" src="./img/MostRecent.png" alt=""><div><span class="wu"> Most Recent</span></div></li>
+            <li class="item"><img class="icon" src="./img/Pages.png" alt=""><div><span class="wu"> Pages</span></div></li>
+            <li class="item"><img class="icon" src="./img/PlayGames.png" alt=""><div><span class="wu"> Play Games</span></div></li>
+            <li class="item"><img class="icon" src="./img/Recentadactivity.png" alt=""><div><span class="wu"> Recent ad activity</span></div></li>
           </span>
-          <li onclick="myFunction()" id="myBtn" class="item"><i class="fa-solid fa-angle-down"></i>See more</li>
-          </ul>
+          <!-- <li onclick="myFunction()" id="myBtn" class="item"><div><p class="round"></p><i class="fa-solid fa-angle-down"></i></div>See more</li> -->
+          <li onclick="myFunction()" id="myBtn" class="item">
+            <div id="round-btn">
+              <i id ="c" class="fa-solid fa-angle-down"></i>
+            </div>
+            <span id="s">See more</span>
+          </li>
+        </ul>
           
           </div>
           <div class="btn-edit">
@@ -83,9 +96,9 @@
             </span>
             <span class="edit">Edit</span>
             <ul class="nav-bar-1">
-              <li class="item">[RA] Khóa học lập trình - Code là phải trâu [220725]</li>
-              <li class="item">Code cho tương lai</li>
-              <li class="item">Đường đến thành công</li>
+              <li class="item"><div class="pce"><img class="picture-group" src="./img/RA.jpg" alt=""><div class="st"><span>[RA] Khóa học lập trình - Code là phải trâu [220725]</span></div></div></li>
+              <li class="item"><div class="pce"><img class="picture-group" src="./img/cff.jpg" alt=""><div class="st"><span>Code cho tương lai</span></div></div></li>
+              <li class="item"><div class="pce"><img class="picture-group" src="./img/ddtc.jpg" alt=""><div class="st"><span>Đường đến thành công</span></div></div></li>
 
             </ul>
           </div>
