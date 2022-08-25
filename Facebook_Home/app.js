@@ -9,31 +9,35 @@ console.log(tt1);
 tt0.onclick = function (event) {
   console.log(event.target.parentElement.children[1]);
   console.log(event.target);
-  if (
-    event.target.style.color != "#1B74E4" ||
-    event.target.children.style.color != "#1B74E4"
-  ) {
+  if (event.target.style.color !== "#1B74E4") {
     event.target.style.color = "#1B74E4";
 
     event.target.parentElement.children[1].style.color = "";
     event.target.parentElement.children[2].style.color = "";
     event.target.parentElement.children[3].style.color = "";
     event.target.parentElement.children[4].style.color = "";
+
+    event.target.parentElement.parentElement.children[1].style.color = "";
+    event.target.parentElement.parentElement.children[2].style.color = "";
+    event.target.parentElement.parentElement.children[3].style.color = "";
+    event.target.parentElement.parentElement.children[4].style.color = "";
   }
   // event.target.style.color = "#1B74E4";
 };
 
 tt1.onclick = function (event) {
-  // console.log(event.target.parentElement.parentElement.children[2]);
-  if (
-    event.target.style.color != "#1B74E4" ||
-    event.target.children.style.color != "#1B74E4"
-  ) {
+  console.log(event.target.parentElement.parentElement.children[0]);
+  if (event.target.style.color !== "#1B74E4") {
     event.target.style.color = "#1B74E4";
     event.target.parentElement.children[0].style.color = "";
     event.target.parentElement.children[2].style.color = "";
     event.target.parentElement.children[3].style.color = "";
     event.target.parentElement.children[4].style.color = "";
+
+    event.target.parentElement.parentElement.children[0].style.color = "";
+    event.target.parentElement.parentElement.children[2].style.color = "";
+    event.target.parentElement.parentElement.children[3].style.color = "";
+    event.target.parentElement.parentElement.children[4].style.color = "";
   }
 
   // event.target.style.color = "#1B74E4";
@@ -41,10 +45,7 @@ tt1.onclick = function (event) {
 
 tt2.onclick = function (event) {
   console.log(event.target.children);
-  if (
-    event.target.style.color != "#1B74E4" ||
-    event.target.children.style.color != "#1B74E4"
-  ) {
+  if (event.target.style.color != "#1B74E4") {
     event.target.style.color = "#1B74E4";
     event.target.parentElement.children[0].style.color = "";
     event.target.parentElement.children[1].style.color = "";
@@ -55,10 +56,7 @@ tt2.onclick = function (event) {
 
 tt3.onclick = function (event) {
   // console.log(event.target.parentElement.children);
-  if (
-    event.target.style.color != "#1B74E4" ||
-    event.target.children.style.color != "#1B74E4"
-  ) {
+  if (event.target.style.color != "#1B74E4") {
     event.target.style.color = "#1B74E4";
     event.target.parentElement.children[0].style.color = "";
     event.target.parentElement.children[1].style.color = "";
@@ -69,10 +67,7 @@ tt3.onclick = function (event) {
 
 tt4.onclick = function (event) {
   // console.log(event.target.parentElement.children);
-  if (
-    event.target.style.color != "#1B74E4" ||
-    event.target.children.style.color != "#1B74E4"
-  ) {
+  if (event.target.style.color != "#1B74E4") {
     event.target.style.color = "#1B74E4";
     event.target.parentElement.children[0].style.color = "";
     event.target.parentElement.children[1].style.color = "";
@@ -232,130 +227,130 @@ btn.onclick = function () {
 
     li.innerHTML = `
     <div style="text-align: center; margin-top: 15px">
-    <div
-      style="
-        width: 580px;
-        border: 1px solid #e5e5e5;
-        border-radius: 10px;
-        display: inline-block;
-        background-color: white;
-        margin-left: 8px;
-      "
-    >
-      <div style="display: flex; margin: 20px">
-        <img
-          src="./img/4farmers.jpg"
-          alt=""
-          style="width: 50px; height: 50px; border-radius: 50%"
-        />
-        <div style="font-weight: 700; margin-left: 10px">
-          4 Farmers  <br />
-          <div class="h-tt">
-            <span><i class="fa-solid fa-earth-americas"></i>&nbspPublic&nbsp<i class="fa-solid fa-caret-down"></i></span>
-          </div>
-        </div>
-        <div class="btn-group">
-          <button class="delete-btn">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-      </div>
+                <div
+                  style="
+                    width: 580px;
+                    border: 1px solid #e5e5e5;
+                    border-radius: 10px;
+                    display: inline-block;
+                    background-color: white;
+                    margin-left: 8px;
+                  "
+                >
+                  <div style="display: flex; margin: 20px">
+                    <img
+                      src="./img/4farmers.jpg"
+                      alt=""
+                      style="width: 50px; height: 50px; border-radius: 50%"
+                    />
+                    <div style="font-weight: 700; margin-left: 10px">
+                      4 Farmers  <br />
+                      <div class="h-tt">
+                        <span><i class="fa-solid fa-earth-americas"></i>&nbspPublic&nbsp<i class="fa-solid fa-caret-down"></i></span>
+                      </div>
+                    </div>
+                    <div class="btn-group">
+                      <button class="delete-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                      </button>
+                    </div>
+                  </div>
 
-      <div
-        class="content"
-        style="
-          font-size: 20px;
-          font-weight: 500;
-          margin: 20px;
-          margin-bottom: 0px;
-          padding-bottom: 15px;
-          border-bottom: 1px solid #e5e5e5;
-          box-sizing: border-box;
-          text-align: left;
-        "
-      >
-        ${value}
-      </div>
+                  <div
+                    class="content"
+                    style="
+                      font-size: 20px;
+                      font-weight: 500;
+                      margin: 20px;
+                      margin-bottom: 0px;
+                      padding-bottom: 15px;
+                      border-bottom: 1px solid #e5e5e5;
+                      box-sizing: border-box;
+                      text-align: left;
+                    "
+                  >
+                    ${value}
+                  </div>
 
-      <div
-        style="
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-        "
-      >
-      <div id="d-popup" class="h-likes">
-        <div id="d-like"> <i
-          class="fas fa-thumbs-up" 
-          style="font-size: 25px; color: gray; padding: 5px"
-        ></i
-        >Like</div>
-       
-        
-      </div>
-      
-        <div class="h-comment">
-          <i
-            class="fa-solid fa-message"
-            style="font-size: 20px; color: gray; "
-          ></i>
-          Comment
-        </div>
-        <div class="h-comment">
-          <i
-            class="fa-solid fa-share"
-            style="font-size: 20px; color: gray;"
-          ></i>
-          Share
-        </div>
-        <div class="d-popup-icon" id="d-thepopup" style="display: none;">
-          <img class="d-gif" src="./img/likegif (1).gif" alt="" />
-          <img class="d-gif" src="./img/heartgif (1).gif" alt="" />
-          <img class="d-gif" src="./img/hahagif (1).gif" alt="" />
-          <img class="d-gif" src="./img/wowgif (1) (1).gif" alt="" />
-          <img class="d-gif" src="./img/sadgif (1).gif" alt="" />
-          <img class="d-gif" src="./img/angrygif (1).gif" alt="" />
-        </div>
-      
-        
-      </div>
-      <div
-        style="
-          border-top: 1px solid #e5e5e5;
-          display: flex;
-          align-items: center;
-          margin: 20px;
-          margin-top: 0px;
-          margin-bottom: 0px;
-          padding: 5px;
-        "
-      >
-        <div>
-          <img
-            src="./img/4farmers.jpg"
-            style="width: 40px; height: 40px; border-radius: 50%"
-            alt=""
-          />
-        </div>
-        <div>
-          <form action="">
-            <input
-              type="text"
-              placeholder="Write a comment..."
-              style="
-                width: 400px;
-                height: 35px;
-                border-radius: 999px;
-                border: none;
-                background-color: #f0f2f5;
-                margin-left: 15px;
-              "
-            />
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>`;
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-around;
+                      align-items: center;
+                    "
+                  >
+                  <div id="d-popup" class="h-likes">
+                    <div id="d-like"> <i
+                      class="fas fa-thumbs-up" 
+                      style="font-size: 25px; color: gray; padding: 5px"
+                    ></i
+                    >Like</div>
+                   
+                    
+                  </div>
+                  
+                    <div class="h-comment">
+                      <i
+                        class="fa-solid fa-message"
+                        style="font-size: 20px; color: gray; "
+                      ></i>
+                      Comment
+                    </div>
+                    <div class="h-comment">
+                      <i
+                        class="fa-solid fa-share"
+                        style="font-size: 20px; color: gray;"
+                      ></i>
+                      Share
+                    </div>
+                    <div class="d-popup-icon" id="d-thepopup" style="display: none;">
+                      <img class="d-gif" src="./img/likegif (1).gif" alt="" />
+                      <img class="d-gif" src="./img/heartgif (1).gif" alt="" />
+                      <img class="d-gif" src="./img/hahagif (1).gif" alt="" />
+                      <img class="d-gif" src="./img/wowgif (1) (1).gif" alt="" />
+                      <img class="d-gif" src="./img/sadgif (1).gif" alt="" />
+                      <img class="d-gif" src="./img/angrygif (1).gif" alt="" />
+                    </div>
+                  
+                    
+                  </div>
+                  <div
+                    style="
+                      border-top: 1px solid #e5e5e5;
+                      display: flex;
+                      align-items: center;
+                      margin: 20px;
+                      margin-top: 0px;
+                      margin-bottom: 0px;
+                      padding: 5px;
+                    "
+                  >
+                    <div>
+                      <img
+                        src="./img/4farmers.jpg"
+                        style="width: 40px; height: 40px; border-radius: 50%"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <form action="">
+                        <input
+                          type="text"
+                          placeholder="Write a comment..."
+                          style="
+                            width: 400px;
+                            height: 35px;
+                            border-radius: 999px;
+                            border: none;
+                            background-color: #f0f2f5;
+                            margin-left: 15px;
+                          "
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>`;
 
     let ul = document.getElementById("list");
     ul.appendChild(li);
@@ -380,6 +375,7 @@ console.log(inter);
 
 let interi = document.getElementById("d-like");
 console.log(interi);
+
 interi.onmouseover = function (event) {
   // console.log(event.target.parentElement.children[3]);
   event.target.parentElement.parentElement.children[3].style.display =
@@ -391,7 +387,9 @@ interi.onmouseout = function (event) {
 };
 
 inter.onmouseover = function (event) {
-  console.log(event.target.parentElement);
+  console.log(
+    event.target.parentElement.parentElement.parentElement.children[0]
+  );
   event.target.parentElement.parentElement.parentElement.children[3].style.display =
     "inline-block";
 };
@@ -403,26 +401,19 @@ inter.onmouseout = function (event) {
 };
 
 // d-like
-interi.onclick = function (event) {
-  console.log(event.target.parentElement.children[0]);
-  if (event.target.style.color == "gray") {
-    event.target.children[0].style.color = "#1B74E4";
-    event.target.style.color = "#1B74E4";
-  } else {
-    event.target.children[0].style.color = "gray";
-    event.target.style.color = "gray";
-  }
-};
+
 //thẻ i
 inter.onclick = function (event) {
   console.log(inter);
-  console.log(event.target);
+  console.log(event.target.children[0]);
   if (event.target.style.color == "gray") {
     event.target.parentElement.style.color = "#1B74E4";
     event.target.style.color = "#1B74E4";
+    event.target.children[0].style.color = "#1B74E4";
   } else {
     event.target.parentElement.style.color = "gray";
     event.target.style.color = "gray";
+    event.target.children[0].style.color = "gray";
   }
 };
 

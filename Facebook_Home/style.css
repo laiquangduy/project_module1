@@ -16,11 +16,12 @@
     border-radius: 999px;
     border: none;
     display: inline-block;
+    padding-left: 20px;
     
 }
-.input::placeholder {
+/* .input::placeholder {
   padding-left:   20px;
-}
+} */
 body{
     background-color: #F0F2F5;
 }
@@ -47,11 +48,13 @@ body{
     justify-content: space-evenly;
     padding: 5px;
     height: 50px;
+    cursor: pointer;
     
 }
 .flex2 {
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
    
 }
 .flex3 {
@@ -96,6 +99,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: grey;
     /* border-bottom: 2px solid #3498DB; */
    
 }
@@ -448,7 +453,8 @@ display: flex;
 .status-ava{
 width:50px;
 height:50px;
-border-radius: 50%
+border-radius: 50%;
+cursor: pointer;
 }
 
 .submit{
@@ -519,6 +525,7 @@ border-radius: 50%;
 
 .status-icon{
 width: 450px;
+cursor: pointer;
 }
 
 
@@ -601,6 +608,10 @@ cursor: pointer;
 
 .h-comment{
   margin: 10px;
+
+}
+.h-comment:hover {
+  background-color: #F2F2F2;
 }
 /* Duy */
 .layout {
@@ -1044,4 +1055,102 @@ a:active {
     animation: fadeIn 1s;
   } */
 
+  /* hiện thanh comment */
+#d-comment {
+  visibility: hidden;
+}
+
+/* post facebook */
+.post-content{
+  width: 580px;
+  border:1px solid #E0E1E4;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 10px;
+  margin-bottom: 10px;
+ 
+}
+.post-header{
+  padding:10px;
+}
+
+
+
+.post-ava img{
+  width: 50px ;
+  height:50px;
+  border-radius: 50%;
+}
+.post-header{
+  display: flex;
+  align-items:center;
+  width: 580px;
+}
+.content-img img{
+  width: 580px;
+  height:450px;
+  padding-bottom:20px;
+}
+.content-reaction{
+  display:flex;
+  justify-content: space-evenly;
+  border-top:1px solid #CED0D4;
+  border-bottom: 1px solid #CED0D4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.post-comment img{
+  width: 40px;
+  height:40px;
+  border-radius: 50px;
+}
+.post-comment{
+  display:flex;
+  padding:10px;
+}
+.post-comment input{
+  border:none;
+  background-color: #F0F2F5;
+  border-radius: 999px;
+  width: 500px;
+  margin-left: 10px;
+  outline:none;
+}
+.content-3dots{
+  padding:10px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.content-3dots:hover{
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+.post-name{
+  font-weight: 600;
+  transition: 0.4s;
+  
+}
+.post-name:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.post-date{
+  font-size:13px;
+  color:#65676B;
+  transition: 0.4s;
+}
+.post-date:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.content-text{
+  font-size: 18px;
+}
+
+.content-reaction:hover{
+  cursor: pointer;
+
+}
   
